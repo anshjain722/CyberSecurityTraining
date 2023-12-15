@@ -1,12 +1,12 @@
-````plaintext
 # Blue Machine - TryHackMe Walkthrough
 
-## Reconnaissance
+## Recon
 
 ### Nmap Scan
+
 ```bash
 nmap -sV -vv --script vuln {machine_ip}
-````
+```
 
 - Discovered open ports: 135, 139, 445, 3389, 49152, 49153, 49154, 49158, 49160.
 - Identified services: MSRPC, netbios-ssn, Microsoft Windows 7-10 on port 445, and more.
@@ -49,7 +49,3 @@ hashdump
 ## Conclusion
 
 This guide covers Nmap scanning, exploiting EternalBlue with Metasploit, privilege escalation, password cracking, and finding flags in different directories. Always use these techniques responsibly and ethically.
-
-```
-
-```
