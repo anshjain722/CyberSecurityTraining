@@ -1,0 +1,40 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2023-12-26 18:26 IST
+NSE: Loaded 46 scripts for scanning.
+Initiating Ping Scan at 18:26
+Scanning 10.10.122.147 [4 ports]
+Completed Ping Scan at 18:26, 0.28s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 18:26
+Completed Parallel DNS resolution of 1 host. at 18:26, 0.05s elapsed
+Initiating SYN Stealth Scan at 18:26
+Scanning 10.10.122.147 [1000 ports]
+Discovered open port 22/tcp on 10.10.122.147
+Discovered open port 139/tcp on 10.10.122.147
+Discovered open port 21/tcp on 10.10.122.147
+Discovered open port 445/tcp on 10.10.122.147
+Discovered open port 3333/tcp on 10.10.122.147
+Discovered open port 3128/tcp on 10.10.122.147
+Completed SYN Stealth Scan at 18:26, 5.93s elapsed (1000 total ports)
+Initiating Service scan at 18:26
+Scanning 6 services on 10.10.122.147
+Completed Service scan at 18:27, 22.61s elapsed (6 services on 1 host)
+NSE: Script scanning 10.10.122.147.
+Initiating NSE at 18:27
+Completed NSE at 18:27, 0.88s elapsed
+Initiating NSE at 18:27
+Completed NSE at 18:27, 0.67s elapsed
+Nmap scan report for 10.10.122.147
+Host is up (0.16s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 3.0.3
+22/tcp   open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.7 (Ubuntu Linux; protocol 2.0)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+3128/tcp open  http-proxy  Squid http proxy 3.5.12
+3333/tcp open  http        Apache httpd 2.4.18 ((Ubuntu))
+Service Info: Host: VULNUNIVERSITY; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 30.77 seconds
+           Raw packets sent: 1094 (48.112KB) | Rcvd: 1080 (43.216KB)
